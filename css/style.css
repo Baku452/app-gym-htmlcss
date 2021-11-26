@@ -1,6 +1,7 @@
 :root {
   /* Colors */
-  --bitcoin-orange: #f7931a;
+  --orange: rgb(232,123,57);
+  --black-pure: #000;
   --soft-orange: #ffe9d5;
   --secondary-blue: #1a9af7;
   --soft-blue: #e7f5ff;
@@ -9,6 +10,8 @@
   --off-white: #faf8f7;
   --just-white: #fff;
   --grey: #bababa;
+
+/*  */
 }
 * {
   box-sizing: border-box;
