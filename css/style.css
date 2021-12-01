@@ -1,16 +1,8 @@
 :root {
   /* Colors */
-  --orange: rgb(232,123,57);
-  --black-pure: #000;
-  --soft-orange: #ffe9d5;
-  --secondary-blue: #1a9af7;
-  --soft-blue: #e7f5ff;
-  --warm-black: #282623;
-  --black: #201e1c;
-  --off-white: #faf8f7;
-  --just-white: #fff;
-  --grey: #bababa;
-
+  --primary: #fffffe;
+  --secondary: #f25f4c;
+  --tertiary: #e53170;
 /*  */
 }
 * {
@@ -20,6 +12,16 @@
 }
 html {
   font-size: 62.5%;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  background: #0f0e17;
+  color: #fffffe;
 }
 
+p{
+  color: #a7a9be;
+}
+
+button{
+  background: #ff8906;
+  color: #fffffe;
+}
