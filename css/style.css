@@ -21,7 +21,40 @@ p{
   color: #a7a9be;
 }
 
+.navHeader{
+  background: #0f0e17;
+  position: sticky;
+  font-size: 2rem;
+  box-shadow: 1px 1px #fefefe;
+  color: #fff;
+  padding: 20px 30px;
+}
+.navHeader nav{
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+.navHeader ul{
+  list-style: none;
+}
+.navHeader ul li{
+  display: inline-block;
+  padding: 10px 30px;
+}
+
 button{
+  padding: 10px 20px;
+  border: none;
+}
+
+.primary{
   background: #ff8906;
   color: #fffffe;
+}
+
+.secondary{
+  background: transparent;
+  color: #ff8906;
+  border: 1px solid #ff8906;
 }
