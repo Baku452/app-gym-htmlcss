@@ -4,7 +4,13 @@
   --secondary: #f25f4c;
   --tertiary: #e53170;
 /*  */
+  --black: #0f0e17;
+  --black-secondary: #a7a9be;
+  --orange: #ff8906;
+  --orange-light: #ff890630;
+  --gray: #a7a9be
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,8 +19,6 @@
 html {
   font-size: 62.5%;
   font-family: "Poppins", sans-serif;
-  background: #0f0e17;
-  color: #fffffe;
 }
 
 p{
