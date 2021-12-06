@@ -8,23 +8,262 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&family=Poppins:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <header class="navHeader">
-      <nav>
+    <header class="header">
+      <nav class="header__nav">
         <p>Logo</p>
         <ul>
-          <li>Tienda</li>
+          <li>Shop</li>
           <li>|</li>
           <li class="primary">Login</li>
-          <li class="secondary">Registrarse</li>
+          <li class="secondary">Register</li>
         </ul>
       </nav>
     </header>
     <main>
-      <h1>Home</h1>
+      <section class="banner">
+        <div class="banner__overlay"></div>
+        <img class="banner__imagen" src="img/banner.jpg"></img>
+        <!-- Banner -->
+        <div class="banner__contenido">
+            <h1 class="banner__contenido__titulo">GYM BULK UP</h1>
+            <button class="banner__contenido__boton secondary">Start now</li>
+          </div>
+        </div>
+      </section>
+      <!-- Entrenamientos -->
+      <section id="trainings" class="container text-center">
+        <h2 class="p-5">Our Trainings</h2>
+        <div class="container__row entrenamientos">
+          <div class="col entrenamientos__card">
+            <div class="entrenamientos__card__content">
+              <h3>Aerobic</h3>
+              <!-- <button class="secondary">More Info</li> -->
+            </div>
+            <img src="img/ourTrainings.jpg"></img>
+          </div>
+          <div class="col entrenamientos__card">
+            <div class="entrenamientos__card__content">
+              <h3>Cross-Fit</h3>
+              <!-- <button class="secondary">More Info</li> -->
+            </div>
+            <img src="img/ourTrainings_2.jpg"></img>
+          </div>
+          <div class="col entrenamientos__card">
+            <div class="entrenamientos__card__content">
+              <h3>Aerobic</h3>
+            </div>
+            <img src="img/ourTrainings_3.jpg"></img>
+            <!-- <button class="secondary">More Info</li> -->
+          </div>
+          <div class="col entrenamientos__card">
+            <div class="entrenamientos__card__content">
+              <h3>Yoga</h3>
+              <!-- <button class="secondary">More Info</li> -->
+            </div>
+            <img src="img/ourTrainings_4.jpg"></img>
+          </div>
+        </div>
+      </section>
+      <!-- Por que unirte a nosotros -->
+      <section id="why-us" class="background text-center">
+        <div class="container">
+          <div class="container__row why-us">
+            <div class="why-us__image col-6">
+              <img src="img/ourTrainings_4.jpg"></img>
+            </div>
+            <div class="why-us__content col-6">
+              <h2>¿Why Join Us?</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis, nisi totam minus cupiditate modi maiores esse aliquam? A distinctio obcaecati, placeat perferendis inventore consequatur neque pariatur! Reiciendis, placeat consequuntur.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Caracteristicas -->
+      <section id="features" class="text-center">
+        <div class="container">
+          <h2 class="p-5">Our features</h2>
+          <div class="container__row features">
+            <div class="col features__card">
+              <div class="features__card__content">
+                <h3>Playlist</h3>
+              </div>
+              <img class="features__card__image" src="img/ourTrainings.jpg"></img>
+            </div>
+            <div class="col features__card">
+              <div class="features__card__content">
+                <h3>Class</h3>
+              </div>
+              <img class="features__card__image" src="img/ourTrainings_2.jpg"></img>
+            </div>
+            <div class="col features__card">
+              <div class="features__card__content">
+                <h3>Blog</h3>
+              </div>
+              <img class="features__card__image" src="img/ourTrainings_3.jpg"></img>
+            </div>
+            <div class="col features__card">
+              <div class="features__card__content">
+                <h3>Personal</h3>
+              </div>
+              <img class="features__card__image" src="img/ourTrainings_4.jpg"></img>
+            </div>
+            <div class="col features__card">
+              <div class="features__card__content">
+                <h3>Live Sessions</h3>
+              </div>
+              <img class="features__card__image" src="img/ourTrainings_4.jpg"></img>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Suscripciones -->
+      <section id="subscriptions" class="background text-center">
+        <div class="container">
+          <h2 class="p-5">Our features</h2>
+          <div class="container__row subscriptions">
+            <div class="subscriptions__card">
+              <div class="subscriptions__card__content">
+                <h3>Free Plan</h3>
+                <ul>
+                  <li>24/7 access to Free Content</li>
+                  <li>Live Master Classes</li>
+                  <li>1 Hour Personal Trainer</li>
+                </ul>
+                <p class="subscriptions__price">Price: Free</p>
+              </div>
+            </div>
+            <div class="subscriptions__card active">
+              <div class="subscriptions__card__content ">
+                <h3>Month Plan</h3>
+                <ul>
+                  <li>24/7 access to Free Content</li>
+                  <li>Live Master Classes</li>
+                  <li>1 Hour Personal Trainer</li>
+                </ul>
+                <p class="subscriptions__price">Price: $19.99</p>
+              </div>
+            </div>
+            <div class="subscriptions__card">
+              <div class="subscriptions__card__content">
+                <h3>Year Plan</h3>
+                <ul>
+                  <li>24/7 access to Free Content</li>
+                  <li>Live Master Classes</li>
+                  <li>1 Hour Personal Trainer</li>
+                </ul>
+                <p class="subscriptions__price">Price: $29.99</p>
+              </div>
+            </div>
+            <p class="p-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique a porro rerum, possimus nesciunt ipsa alias velit. Quo veniam hic inventore, enim, vitae voluptatibus,</p>
+          </div>
+        </div>
+      </section>
+      <!-- Tutorial -->
+      <section id="web-tour" class=" text-center">
+        <div class="container">
+          <div class="container__row webTour">
+            <div class="webTour__video col-6">
+              <video width="500" height="340" controls>
+                <source src="movie.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="webTour__content col-6">
+              <h2>Web tour</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam error minus beatae voluptates sapiente quaerat quis, saepe laboriosam? Nobis culpa similique cum dolor aliquam corrupti in quos! Rem, ullam soluta!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Instructores -->
+      <section id="features" class="background text-center">
+        <div class="container">
+          <h2 class="p-5">Our Trainers</h2>
+          <div class="container__row features">
+            <div class="col features__card">
+              <div class="features__card__content">
+                <h3>Bulk up Trainers</h3>
+              </div>
+              <img src="img/ourTrainings.jpg"></img>
+            </div>
+            <div class="col features__card">
+              <div class="features__card__content">
+                <h3>Fitness Trainers</h3>
+              </div>
+              <img src="img/ourTrainings_2.jpg"></img>
+            </div>
+            <div class="col features__card">
+              <div class="features__card__content">
+                <h3>Muscle Trainers</h3>
+              </div>
+              <img src="img/ourTrainings_3.jpg"></img>
+            </div>
+            <div class="col features__card">
+              <div class="features__card__content">
+                <h3>Yoga Trainers</h3>
+              </div>
+              <img src="img/ourTrainings_4.jpg"></img>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Testimonials -->
+      <section id="Testimonials" class="text-center">
+        <div class="container">
+          <h2 class="p-5">Testimonials</h2>
+          <div class="container__row testimonials">
+            <div class="col testimonials__card">
+              <div class="testimonials__card__content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor asperiores architecto, nobis rerum at id nisi totam eaque sed quos optio vel reiciendis nam tenetur nostrum, doloremque modi illo libero.
+                </p>
+              </div>
+              <img class="testimonials__card__image" src="img/ourTrainings.jpg"></img>
+              <h5>Alfred Molina</h5>
+              <h6>Entrepeneur</h6>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Newsletter -->
+      <section id="newsletter" class="background--img text-center">
+        <div class="container">
+          <div class="container__row newsletter">
+            <div class="newsletter__title ">
+              <h2>Subscribe to Our newsletter</h2>
+            </div>
+            <div class="newsletter__form col-6">
+              <form>
+                <input type="email" placeholder="Your Email goes here">
+                <input type="submit" value="Submit">
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>
+    <footer class="background">
+      <div class="container">
+        <div class="container__row footer">
+          <div class="col">
+            <h3>Social Media</h3>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet perferendis odit itaque omnis deserunt! Quibusdam numquam nam et, quis laboriosam quaerat unde a aut eligendi esse amet nisi commodi ab.
+          </div>
+          <div class="col">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet perferendis odit itaque omnis deserunt! Quibusdam numquam nam et, quis laboriosam quaerat unde a aut eligendi esse amet nisi commodi ab.
+          </div>
+          <div class="col">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet perferendis odit itaque omnis deserunt! Quibusdam numquam nam et, quis laboriosam quaerat unde a aut eligendi esse amet nisi commodi ab.
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
-</html>
+  </html>
+            
