@@ -4,7 +4,7 @@
 
 /* --- Header ----*/
 header {
-    background-color: var(--primary);
+    background-color: var(--black);
     display: flex;
     justify-content: space-between;
     padding: 1.5rem;
@@ -23,24 +23,45 @@ header {
 
 .search .search__icon {
     height: 4rem;
-    width: 4rem;
+    width: 1.5rem;
     line-height: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    background: transparent;
+    border-radius: 5px 0 0 5px;
+    padding-left: 2rem;
 }
 .search .search__icon img {
-    width: 3rem;
-}
-.search .search__input input {
-    background: var(--black);
-    height: 4rem;
-    font-size: 1.5rem;
-    font-weight: 700;
+    width: 1.5rem;
+    border-radius: 5px 0 0 5px;
+    background: transparent;
 }
 
-.search .search__input input:placeholder {
-    color: var(--primary);
+.search .search__input {
+    margin-right: 1rem;
+    border-radius: .5rem;
+}
+
+.search .search__input input {
+    background: var(--primary);
+    border-radius: .5rem;
+    height: 4rem;
+    width:25rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-left: 3.5rem;
+}
+
+.search .search__input input:focus {
+    outline: none;
+}
+
+.search .search__input input::placeholder {
+    color: var(--black-light);
+    font-size:1.2rem;
+    /* padding-left: 4.5rem; */
 }
 
 .search .search__button {
@@ -63,6 +84,7 @@ header {
 
 .header__user .user__profile .name {
     display: none;
+    color: var(--primary);
 }
 
 .header__user .user__profile .photo img {
@@ -292,14 +314,27 @@ header {
 @media only screen and (min-width: 992px) {
     body {
         display: flex;
-        background: #ffffff30;
+        background: var(--black);
     }
 
     .aside {
         display: block;
-        width:35rem;
+        width:370px;
         height:100%;
-        background: var(--orange);
+        background: #141414;
+    }
+
+    .aside__content__menu ul li {
+        padding: 10px;
+        margin-bottom: 5px;
+    }
+
+    .aside__content__menu ul li:hover {
+        background: var(--gray);
+    }
+
+    .aside__content__menu ul li.active a {
+        color: var(--orange)
     }
 
     .aside__log {
@@ -338,12 +373,12 @@ header {
 
     /* --- Header ----*/
     header {
-        background-color: var(--primary);
-        justify-content: space-between;
-        padding: 1.5rem;
-        margin-bottom: 10px;
-        align-items: center;
-        box-shadow: 0 2px 4px var(--gray);
+        /* background-color: var(--primary); */
+        /* justify-content: space-between; */
+        /* padding: 1.5rem; */
+        /* margin-bottom: 10px; */
+        /* align-items: center; */
+        /* box-shadow: 0 2px 4px var(--gray); */
     }
 
     .header__menu {
@@ -378,28 +413,27 @@ header {
         width: 500px;
     }
     .search .search__icon {
-        background: #e1e1e1;
-        padding: 8px;
-        border-radius: 5px 0 0 5px;
+        /* padding: 8px; */
+        /* border-radius: 5px 0 0 5px; */
     }
 
     .search .search__input {
-        width: 100%;
-        margin-right: 1rem;
+        /* width: 100%; */
+        /* margin-right: 1rem; */
     }
 
     .search .search__input input {
-        width: 100%;
-        border: none;
-        border-radius: 0 5px 5px 0;
-        color: var(--primary);
-        font-size: 1.2rem;
-        padding: 8px;
+        /* width: 100%; */
+        /* border: none; */
+        /* border-radius: 0 5px 5px 0; */
+        /* color: var(--primary); */
+        /* font-size: 1.2rem; */
+        /* padding: 8px; */
     }
 
     .search .search__input input::placeholder {
-        padding: 8px;
-        font-size: 1.2rem;
+        /* padding: 8px; */
+        /* font-size: 1.2rem; */
     } 
 
     .principal {
@@ -410,17 +444,19 @@ header {
     .principal__profiles {
         width:600px;
         margin: 0 1rem;
+        background: var(--black);
     }
 
     .principal__profiles .principal__instructor {
         width: 100%;
-        background: var(--orange);
+        background: var(--primary);
         padding: 10px;
         border-radius: 5px;
     }
 
     .principal__profiles .principal__improvement {
-    width: 100%;
+        width: 100%;
+        background: var(--black);
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -430,11 +466,12 @@ header {
     .principal__profiles .principal__improvement span{
         font-weight: 700;
         font-size: 1.5rem;
+        color: var(--primary);
     }
 
     .principal__profiles .principal__improvement button{
-        background: #ff890630;
-        color: var(--orange);
+        background: var(--orange);
+        color: var(--primary);
         font-weight: 700;
         border-radius: 5px;
     }
@@ -442,17 +479,20 @@ header {
     .principal__profiles .principal__instructors {
         display: block;
         width: 100%;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        background: var(--black);
     }
 
 
     .principal__instructors .instructors {
+        background: var(--primary);
+        border-radius: 5px;
     }
 
     .principal__instructors .instructors .instructor{
         display: flex;
         align-items: center;
-        margin: 15px 15px 0 15px;
+        padding: 15px 15px 0 15px;
         padding-bottom: 15px;
         justify-content: space-between;
         border-bottom: 1px solid #00000030;
@@ -482,7 +522,7 @@ header {
     }
 
     .principal__body {
-        background: var(--principal)
+        background: var(--black)
     }
 
     .principal__body__courses {
@@ -509,7 +549,7 @@ header {
     }
 
     .resumen .row .card {
-        background-color: var(--primary);
+        background-color: var(--black);
     }
 
     .resumen .row .card .card__count {
