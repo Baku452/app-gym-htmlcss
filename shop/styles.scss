@@ -77,7 +77,7 @@
 
   .navHeader nav{
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 100%;
     display: flex;
     justify-content:space-between;
   }
@@ -99,6 +99,7 @@
   .submenu-access{
     display:none;
     background-color: white;
+    font-size: 1em;
   }
   .access-cuenta:hover> .submenu-access{
     display:flex;
@@ -111,11 +112,11 @@
     
     display:none;
     background-color: white;
-    width: 40rem;
+    width: 20em;
     height: 30rem;
     flex-direction: column;
-    position:absolute;
-    right: 100px;
+    position:relative;
+    right: 5%;
     overflow: scroll;
   }
 
@@ -151,15 +152,22 @@
  }
 
  .banner{
-    height: 300px;  
+    height: 30rem;  
+    width: 100%;
+    object-fit:cover;
     background: aqua url('opt2.png') center center/cover no-repeat;
-    
+       
  }
+ 
+ .nom-1{
+  display:none;
+}
 
  .categorias{
     font-size: 20px;
-     width: 30%;
-     height: 30%;
+    box-sizing: border-box;
+     max-width: 25%;
+     height: 25%;
      background-color: #0f0e17;
      border: 2px solid white ;
      margin-left: 10px;
@@ -184,8 +192,8 @@
  
  .filtro{
     font-size: 20px;
-     width: 300px;
-     height: 300px;
+     width: 25%;
+     height: 25%;
      background-color: #0f0e17;
      border: 2px solid white ;
      margin-left: 10px;
@@ -213,35 +221,7 @@
 
  }
 
- .product-list{
-    list-style: none;
-    //display: inline-block;
-    
-    font-size: 20px;
-    font-family: "Poppins", sans-serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    li{
-        padding-bottom: 15px;
-        padding-left: 15px;
-        padding-right: 15px;
-        
-    }
-
-    .img-produc{
-        width: 22rem;
-      height: 20rem;
-
-    }
-    
-
- }
-.add{
-  width: 10rem;
-}
+ 
 
  .button{
     background: #ff8906;
@@ -256,10 +236,10 @@
 
  .productos{
      position: absolute;
-     left: 350px;
+     left: 30%;
      top:400px;
      font-size: 20px;
-     width: 900px;
+     width: 65%;
      height: 1050px;
      background-color: #0f0e17;
      border: 2px solid white ;
@@ -269,7 +249,41 @@
      display: flex;
      flex-direction: column;
      justify-content: space-around;
- }
+ 
+ 
+    }
+
+    .product-list{
+       list-style:none;
+       //display: inline-block;
+       
+       font-size: 20px;
+       font-family: "Poppins", sans-serif;
+       display: flex;
+       //flex-direction: row;
+       justify-content: space-around;
+       flex-wrap: wrap;
+       overflow: scroll;
+   
+       li{
+           padding-bottom: 15px;
+           padding-left: 15px;
+           padding-right: 15px;
+           
+       }
+   
+       .img-produc{
+         position: relative;
+         width: 20rem;
+         height: 22rem;
+   
+       }
+       
+   
+    }
+   .add{
+     width: 30%;
+   }
 
  .product-text{
      padding-top: 10px;
@@ -277,8 +291,8 @@
  }
  
  .contenido{
-  width: 900px;
-  height: 1000px;
+  width: 100%;
+  height: 1050px;
  }
 
 
@@ -381,5 +395,77 @@ h2{
   font-size: 3rem;
 }
 
+  @media(max-width: 720px) {
+    body {
+      font-size: 16px;
+      //background-color: blue;
+      }
+  
+      .textlabel{
+        display:none;
+      }
 
+      .barra-lat{
+        display:none;
+      }
+
+      .myaccount{
+        display:none;
+
+      }
+
+      .nom{
+        display:none;
+      }
+      .nom-1{
+        display:flex;
+      }
+
+      .nom-1:hover>.barra-lat{
+
+        display:flex;
+        align-items: stretch;
+        flex-direction: column;
+        position: absolute;
+      }
+  
+      .banner{
+        background-size: cover;
+      }
+      .resumen{
+        display:none;
+        right: 0%;
+
+      }
+
+      .carrito:hover> .resumen{
+        display:none;
+        align-items: stretch;
+        flex-direction: column;
+        position: absolute;
+     }
+
+     .productos{
+      position: absolute;
+      left: 5%;
+      top:400px;
+      font-size: 20px;
+      width: 85%;
+      height: 1050px;
+      background-color: #0f0e17;
+      border: 2px solid white ;
+      margin-left: 10px;
+      margin-top: 10px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+  }
+
+
+  
+     
+    }
+
+    
 
